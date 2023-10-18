@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 export default function Button(props) {
-  const { label } = props;
+  const { label, className } = props;
   return (
-    <button className="btn btn-neutral btn-wide" {...props}>
+    <button className={`p-3 px-6 font-bold text-white ${className}`} {...props}>
       {label}
     </button>
   );
