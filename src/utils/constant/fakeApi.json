@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "productName": "Smartphone",
+    "productCategory": "Electronics",
+    "image": "../../assets/product-1.jpeg",
+    "productFreshness": "Brand New",
+    "additionalDescription": "High-quality smartphone with advanced features.",
+    "productPrice": 499
+  },
+  {
+    "id": "1",
+    "productName": "Smartphone",
+    "productCategory": "Electronics",
+    "image": "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png",
+    "productFreshness": "Brand New",
+    "additionalDescription": "High-quality smartphone with advanced features.",
+    "productPrice": 499
+  },
+  {
+    "id": "1",
+    "productName": "Smartphone",
+    "productCategory": "Electronics",
+    "image": "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png",
+    "productFreshness": "Brand New",
+    "additionalDescription": "High-quality smartphone with advanced features.",
+    "productPrice": 499
+  }
+]

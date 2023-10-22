@@ -1,4 +1,5 @@
 import LandingPage from "../pages/landingPage";
+import Products from "../pages/products";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 export default function Router() {
@@ -6,6 +7,10 @@ export default function Router() {
     {
       path: "/",
       element: <LandingPage />,
+    },
+    {
+      path: "/products",
+      element: <Products />,
     },
     {
       path: "*",

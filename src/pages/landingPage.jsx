@@ -1,71 +1,93 @@
-import imgAssets from "../assets/photo-1558769132-cb1aea458c5e.avif";
-import imgHero from "../assets/img-hero.png";
+import FooterContent from "../components/footer";
+
 import Layout from "../components/layout";
 import Button from "../components/button";
-import Card from "../components/card";
+import CardCo from "../components/cardCo";
+import Label from "../components/label";
 
 function landingPage() {
   return (
     <Layout>
-      <header className="flex flex-row items-center justify-center h-screen">
-        <div className="w-3/5">
-          <h1 className="text-5xl font-bold">Discover Your Perfect Fit</h1>
-          <h2 className="text-xl font-semibold">
+      <header className="h-screen rounded-md">
+        <div className="flex flex-col items-center justify-center w-full px-5 h-5/6 ">
+          <Label
+            text={"Choose an outfit that makes you feel good about it"}
+            className={"my-10"}
+          />
+          <h1 className="font-semibold text-7xl">Discover </h1>
+          <h1 className="font-semibold text-7xl">Your Perfect Fit</h1>
+          <h2 className="my-5 text-xl font-base">
             Guiding Women in Choosing Clothing that Reflects Their True Selves
           </h2>
-          <p className="w-9/12 my-2 text-md">
-            Wardrobe Fit, you can look stunning on any occasion! Find your
-            style, create the perfect look, and be the center of attention at
-            any party, date night, or wedding. Achieve your perfect style with
-            Wardrobe Fit
-          </p>
           <Button
-            label="Let's Try"
+            label="Let's try it"
             type="submit"
-            className="w-2/5 my-5 font-semibold text-gray-900 btn btn-primary"
+            className="w-32 rounded-full my-5 py-3 font-semibold text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
           />
         </div>
-        <div className="mx-5">
-          <img src={imgHero} alt="imgHeader" width={500} height={500} />
-        </div>
       </header>
-      <main className="h-screen">
-        <div className="py-5">
+      <main>
+        <div className="h-fit">
           <h2 className="text-2xl font-semibold">Top Selections</h2>
           <div className="flex flex-row justify-center">
-            <Card
-              imageSrc={imgAssets}
-              title="Shoes!"
-              description="If a dog chews shoes whose shoes does he choose?"
-              buttonText="Take it"
+            <CardCo
+              imageSrc="https://react-tailwind-portfolio-virid.vercel.app/Frame11.png"
+              title="Hangouts"
+              description="Stylish & Youth Style"
             />
-            <Card
-              imageSrc={imgAssets}
-              title="Shoes!"
-              description="If a dog chews shoes whose shoes does he choose?"
-              buttonText="Take it"
+            <CardCo
+              imageSrc="https://react-tailwind-portfolio-virid.vercel.app/Frame2.png"
+              title="Wedding Party"
+              description="Simple ellegant"
             />
-            <Card
-              imageSrc={imgAssets}
-              title="Shoes!"
-              description="If a dog chews shoes whose shoes does he choose?"
-              buttonText="Take it"
+            <CardCo
+              imageSrc="https://react-tailwind-portfolio-virid.vercel.app/Frame3.png"
+              title="Hangouts"
+              description="Simple for hangouts"
             />
           </div>
-          <div className="mx-auto bg-[#E8D9AD] w-1/2 my-10 rounded-lg">
-            <div className="py-24 text-center">
-              <h1 className="text-xl">
+          <div className="w-full my-10 rounded-lg">
+            <div className="flex py-24 text-center">
+              <h1 className="w-10/12 mr-10 text-6xl">
                 The Easy Way to Pick Your Favorite Wardrobe
               </h1>
+              <div className="flex flex-col items-start justify-start">
+                <p className="mx-5 my-3 text-xl text-start">
+                  With Wardrobe Fit, you can look stunning on any occasion, Find
+                  your style, create the perfect look, and be the center of
+                  attention at any party, date night, or wedding. Achieve your
+                  perfect style with Wardrobe Fit
+                </p>
+                <Button
+                  label="Get Started"
+                  type="submit"
+                  className="w-32 rounded-full mx-5 my-3 py-3 text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
+                />
+              </div>
             </div>
           </div>
         </div>
       </main>
       <footer>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="w-full my-10 rounded-lg">
+          <div className="text-center">
+            <Label text={"Meet our owner"} />
+            <div className="flex flex-col items-start justify-start">
+              <p className="mx-5 my-3 text-xl text-start">
+                With Wardrobe Fit, you can look stunning on any occasion, Find
+                your style, create the perfect look, and be the center of
+                attention at any party, date night, or wedding. Achieve your
+                perfect style with Wardrobe Fit
+              </p>
+              <Button
+                label="Get Started"
+                type="submit"
+                className="w-32 rounded-full mx-5 my-3 py-3 text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
+              />
+            </div>
+          </div>
+        </div>
+        <FooterContent title={"WardrobeFit"} description={"Dimdimah"} />
       </footer>
     </Layout>
   );
