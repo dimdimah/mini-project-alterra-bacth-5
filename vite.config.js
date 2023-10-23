@@ -12,4 +12,12 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    coverage: {
+      provider: "v8",
+      exclude: ["src/utils/apis/axiosWithConfig.ts"],
+    },
+  },
 });
