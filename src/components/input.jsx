@@ -5,16 +5,13 @@ function Input(props) {
 
   return (
     <div className="flex flex-col mb-4">
-      <label
-        className="text-black dark:text-white tracking-wider mb-3"
-        htmlFor={id}
-      >
+      <label className="mb-3 tracking-wider text-black" htmlFor={id}>
         {label}
       </label>
       <input
         className={clsx(
-          "border rounded-lg bg-slate-200 dark:bg-neutral-600 border-red-500 text-black dark:text-white p-2 focus:outline-none focus:border-slate-200 focus:ring-1 focus:ring-slate-200 w-full",
-          !error && "border-slate-200"
+          "border rounded-lg bg-slate-50 border-red-500 text-black  p-2 focus:outline-none focus:border-slate-100 focus:ring-1 focus:ring-slate-200 w-full",
+          !error && "border-slate-900"
         )}
         type={type}
         {...(register
@@ -26,7 +23,7 @@ function Input(props) {
       />
       {error && (
         <label className="label">
-          <span className="break-words text-sm font-light text-red-500">
+          <span className="text-sm font-light text-red-500 break-words">
             {error}
           </span>
         </label>
@@ -41,7 +38,7 @@ function TextArea(props) {
   return (
     <div className="flex flex-col mb-4">
       <label
-        className="text-black dark:text-white tracking-wider mb-3"
+        className="mb-3 tracking-wider text-black dark:text-white"
         htmlFor={id}
       >
         {label}
@@ -56,7 +53,7 @@ function TextArea(props) {
       />
       {error && (
         <label className="label">
-          <span className="break-words text-sm font-light text-red-500">
+          <span className="text-sm font-light text-red-500 break-words">
             {error}
           </span>
         </label>
@@ -71,7 +68,7 @@ function Select(props) {
   return (
     <div className="flex flex-col mb-4">
       <label
-        className="text-black dark:text-white tracking-wider mb-3"
+        className="mb-3 tracking-wider text-black dark:text-white"
         htmlFor={id}
       >
         {label}
@@ -96,7 +93,7 @@ function Select(props) {
       </select>
       {error && (
         <label className="label">
-          <span className="break-words text-sm font-light text-red-500">
+          <span className="text-sm font-light text-red-500 break-words">
             {error}
           </span>
         </label>
@@ -110,12 +107,12 @@ function RadioGroup(props) {
 
   return (
     <div className="flex flex-col mb-4" aria-label={props["aria-label"]}>
-      <label className="text-black dark:text-white tracking-wider mb-3">
+      <label className="mb-3 tracking-wider text-black dark:text-white">
         {label}
       </label>
       {options.map((option) => (
         <label
-          className="text-black dark:text-white tracking-wider"
+          className="tracking-wider text-black dark:text-white"
           htmlFor={option}
           key={option}
         >
@@ -131,7 +128,7 @@ function RadioGroup(props) {
       ))}
       {error && (
         <label className="label">
-          <span className="break-words text-sm font-light text-red-500">
+          <span className="text-sm font-light text-red-500 break-words">
             {error}
           </span>
         </label>

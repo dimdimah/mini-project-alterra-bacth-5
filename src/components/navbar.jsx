@@ -39,7 +39,7 @@ export default function Navbar() {
             <>
               <Link
                 to="/products"
-                className="py-2 text-base text-center text-gray-900 rounded-full w-14 hover:text-gray-500"
+                className="w-16 py-3 text-base text-center text-gray-900 rounded-full hover:text-gray-500"
               >
                 Products
               </Link>

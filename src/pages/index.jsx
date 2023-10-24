@@ -53,8 +53,8 @@ export default function Index() {
               </h1>
               <div className="flex flex-col items-start justify-start">
                 <p className="mx-5 my-3 text-xl text-start">
-                  With Wardrobe Fit, you can look stunning on any occasion, Find
-                  your style, create the perfect look, and be the center of
+                  With Wardrobe Fit you can look stunning on any occasion, Find
+                  your style, create the perfect look and be the center of
                   attention at any party, date night, or wedding. Achieve your
                   perfect style with Wardrobe Fit
                 </p>
