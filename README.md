@@ -1,8 +1,19 @@
-# React + Vite
+![WardrobeFit](public/WardrobeFit.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Wardrobe-Fit🧥
 
-Currently, two official plugins are available:
+Sebuah platform web aplikasi yang dirancang khusus untuk memenuhi kebutuhan pakaian wanita yang ingin tampil modis dan percaya diri saat menghadiri acara seperti hangout dan pesta ulang tahun.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Produk ini menawarkan berbagai fitur yang membantu pengguna dalam memilih pakaian yang sesuai dengan gaya mereka.
+
+Dengan koleksi pakaian terkini, WardrobeFit memberikan pengalaman yang menyenangkan dan efisien untuk mencapai tampilan yang sempurna dalam setiap kesempatan.
+
+## Contributors🔗
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://dimdimm-doc.vercel.app/"><img src="https://avatars.githubusercontent.com/u/91460676?v=4" width="200px;" alt="Dimdimah"/><br /><sub style="font-size: 1.5rem;"><b>Dimah Luthfi</b></sub></a><br /><a href="https://github.com/dimdimah" title="Code">💻</a> <a href="#design" title="Design">🎨</a> <a href="#ideas" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dimdimah/mini-project-alterra-bacth-5" title="Documentation">📖</a>
+      </td>
+  </tbody>
+</table>
