@@ -1,22 +1,20 @@
-import React from "react";
-
-function ReusableCard({ imageSrc, title, description, buttonText, className }) {
+export default function Card({ imageSrc, title, description }) {
+  const cardStyle = {
+    backgroundImage: `url(${imageSrc})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: "300px",
+    height: "300px",
+  };
   return (
     <div
-      className={`mx-3 my-5 shadow-xl card w-96 bg-base-100 image-full${className}`}
+      className="max-w-sm m-4 overflow-hidden rounded-lg shadow-lg"
+      style={cardStyle}
     >
-      <figure>
-        <img src={imageSrc} alt={title} />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <p>{description}</p>
-        <div className="justify-end card-actions">
-          <button className="btn btn-primary">{buttonText}</button>
-        </div>
+      <div className="grid content-end h-full px-6 py-3 bg-black bg-opacity-50">
+        <div className="mb-2 text-lg font-bold text-white">{title}</div>
+        <p className="text-sm text-gray-200">{description}</p>
       </div>
     </div>
   );
 }
-
-export default ReusableCard;

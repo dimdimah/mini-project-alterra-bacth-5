@@ -1,21 +1,40 @@
-import LandingPage from "../pages/landingPage";
-import Products from "../pages/products";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+
+import { useToken } from "@/utils/contexts/token";
+import RegisterPage from "@/pages/auth/register";
+import ProductsPage from "@/pages/products";
+import LoginPage from "@/pages/auth/login";
+import Home from "@/pages";
 
 export default function Router() {
+  const { token } = useToken();
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <LandingPage />,
+      element: <Home />,
     },
     {
       path: "/products",
-      element: <Products />,
+      element: token === "" ? <Navigate to="/" /> : <ProductsPage />,
+    },
+    {
+      path: "/login",
+      element: token !== "" ? <Navigate to="/" /> : <LoginPage />,
+    },
+    {
+      path: "/register",
+      element: token !== "" ? <Navigate to="/" /> : <RegisterPage />,
     },
     {
       path: "*",
       element: <div>404 page not found</div>,
     },
   ]);
+
   return <RouterProvider router={router} />;
 }
