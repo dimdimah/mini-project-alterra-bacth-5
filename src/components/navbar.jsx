@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { CiLogout } from "react-icons/Ci";
 import { useToken } from "@/utils/contexts/token";
 import { toast } from "react-toastify";
 
@@ -44,10 +45,10 @@ export default function Navbar() {
                 Products
               </Link>
               <p
-                className="cursor-pointer w-24 rounded-full py-3 text-center text-base text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
+                className="cursor-pointer w-16 rounded-full py-3 text-center text-base text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
                 onClick={() => handleLogout()}
               >
-                Logout
+                <CiLogout className="mx-auto text-xl font-bold" />
               </p>
             </>
           )}

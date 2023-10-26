@@ -16,9 +16,7 @@ const indexProduct = () => {
       });
 
       // Lakukan permintaan GET dengan instance axios
-      const response = await instance.get(
-        "https://fakestoreapi.com/products/category/jewelery"
-      );
+      const response = await instance.get("https://fakestoreapi.com/products");
 
       // Atur state dengan data yang diterima
       setProducts(response.data);
