@@ -16,7 +16,9 @@ const indexProduct = () => {
       });
 
       // Lakukan permintaan GET dengan instance axios
-      const response = await instance.get("https://fakestoreapi.com/products");
+      const response = await instance.get(
+        "https://651a7d75340309952f0d6272.mockapi.io/api/v1/products?category=WithHijab"
+      );
 
       // Atur state dengan data yang diterima
       setProducts(response.data);
@@ -60,9 +62,9 @@ const indexProduct = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <AiFillLike />
-                <p>{product.rating.rate}</p>
+                <p>{product.rate}</p>
                 <AiFillEye />
-                <p>{product.rating.count}</p>
+                <p>{product.view}</p>
               </div>
             </div>
           </div>

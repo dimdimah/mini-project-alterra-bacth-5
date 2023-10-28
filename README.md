@@ -17,3 +17,11 @@ Dengan koleksi pakaian terkini, WardrobeFit memberikan pengalaman yang menyenang
       </td>
   </tbody>
 </table>
+
+## References
+
+<a href='https://www.figma.com/file/VtX1wG3N6uQnoqXLuf9Zz9/MiniProject-Alterra-5?type=design&node-id=0%3A1&mode=design&t=QDHdwBzZjyx0iAQ1-1'>Figma Mini Project Alterra Batch 5</a>
+
+## Demo
+
+<a href=''>Mini Project Alterra Batch 5</a>
