@@ -1,34 +1,25 @@
-import { AiFillLike, AiFillEye } from "react-icons/Ai";
-import Layout from "@/components/layout";
+import { AiFillLike } from "@react-icons/all-files/ai/AiFillLike";
+import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import NavDetails from "@/components/navdetail";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Layout from "@/components/layout";
 import axios from "axios";
 
 const indexProduct = () => {
   const [products, setProducts] = useState([]);
-
-  // Buat fungsi async untuk mendapatkan data produk
   const getProducts = async () => {
     try {
-      // Buat instance axios dengan baseURL
       const instance = axios.create({
         baseURL: "2",
       });
-
-      // Lakukan permintaan GET dengan instance axios
       const response = await instance.get(
         "https://651a7d75340309952f0d6272.mockapi.io/api/v1/products?category=WithHijab"
       );
-
-      // Atur state dengan data yang diterima
       setProducts(response.data);
     } catch (error) {
-      // Tangani error jika ada
       console.error(error);
     }
   };
-
-  // Panggil fungsi getProducts di dalam useEffect
   useEffect(() => {
     getProducts();
   }, []);

@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="container flex items-center justify-between p-5 mx-auto">
         <Link
           to="/"
-          className="py-2 text-lg font-semibold text-center text-gray-900"
+          className="py-2 text-xl font-semibold text-center text-gray-900 "
         >
           WardrobeFit
         </Link>
@@ -25,13 +25,13 @@ export default function Navbar() {
             <>
               <Link
                 to="/login"
-                className="py-2 text-base text-center text-gray-900 rounded-full w-14 hover:text-gray-500"
+                className="py-2 text-lg text-center text-gray-900 rounded-full w-14 hover:text-gray-500"
               >
                 Log in
               </Link>
               <Link
                 to="/register"
-                className="w-24 rounded-full py-3 text-center text-base text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
+                className="w-24 rounded-full py-3 text-center text-lg text-gray-100 bg-[#0D0C22] hover:bg-[#565564] hover:delay-150"
               >
                 Register
               </Link>
@@ -40,15 +40,15 @@ export default function Navbar() {
             <>
               <Link
                 to="/products"
-                className="w-16 py-3 text-base text-center text-gray-900 rounded-full hover:text-gray-500"
+                className="w-20 py-3 text-lg text-center text-gray-900 rounded-full hover:text-gray-500"
               >
                 Products
               </Link>
               <p
-                className="cursor-pointer w-16 rounded-full py-3 text-center text-base text-gray-100 bg-[#0D0C22] hover:bg-[#565564]"
+                className="cursor-pointer w-16 rounded-full py-3 text-center text-lg text-gray-100 bg-[#0D0C22] hover:bg-[#565564] hover:delay-150"
                 onClick={() => handleLogout()}
               >
-                <CiLogout className="mx-auto text-xl font-bold" />
+                <CiLogout className="mx-auto text-xl font-bold " />
               </p>
             </>
           )}
