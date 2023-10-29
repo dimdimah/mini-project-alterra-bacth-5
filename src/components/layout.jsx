@@ -1,5 +1,5 @@
-import Navbar from "./navbar";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "./navbar";
 
 export default function Layout({ children }) {
   return (

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { CiLogout } from "react-icons/Ci";
+import { BiLogOutCircle } from "@react-icons/all-files/bi/BiLogOutCircle.esm";
 import { useToken } from "@/utils/contexts/token";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function Navbar() {
@@ -48,7 +48,7 @@ export default function Navbar() {
                 className="cursor-pointer w-16 rounded-full py-3 text-center text-lg text-gray-100 bg-[#0D0C22] hover:bg-[#565564] hover:delay-150"
                 onClick={() => handleLogout()}
               >
-                <CiLogout className="mx-auto text-xl font-bold " />
+                <BiLogOutCircle className="mx-auto text-xl font-bold " />
               </p>
             </>
           )}

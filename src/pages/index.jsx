@@ -1,10 +1,10 @@
+import AboutImg from "../assets/img-about.png";
+import FootBar from "../components/footer";
 import Layout from "@/components/layout";
 import Button from "@/components/button";
 import { Link } from "react-router-dom";
 import Label from "../components/badge";
-import FootBar from "../components/footer";
 import Card from "../components/card";
-import AboutImg from "../assets/img-about.png";
 
 export default function Index() {
   return (
