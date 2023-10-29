@@ -24,4 +24,4 @@ Dengan koleksi pakaian terkini, WardrobeFit memberikan pengalaman yang menyenang
 
 ## Demo
 
-<a href=''>Mini Project Alterra Batch 5</a>
+<a href='https://wardrobefit.vercel.app/'>Mini Project Alterra Batch 5</a>
