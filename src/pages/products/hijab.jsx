@@ -1,6 +1,6 @@
 import { AiFillLike } from "@react-icons/all-files/ai/AiFillLike";
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
-import NavDetails from "@/components/navdetail";
+import NavDetails from "@/components/navDetail";
 import { useState, useEffect } from "react";
 import Layout from "@/components/layout";
 import axios from "axios";
