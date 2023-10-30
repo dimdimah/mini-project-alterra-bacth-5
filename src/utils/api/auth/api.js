@@ -1,6 +1,6 @@
 export const userLogin = async (data) => {
   return new Promise((resolve, reject) => {
-    const dummyUser = { username: "admin", password: "password123" };
+    const dummyUser = { username: "dimah", password: "dimah123" };
 
     setTimeout(() => {
       if (

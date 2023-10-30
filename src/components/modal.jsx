@@ -1,4 +1,3 @@
-// Import React and TailwindCSS
 import { AiFillLike } from "@react-icons/all-files/ai/AiFillLike";
 import { AiFillEye } from "@react-icons/all-files/ai/AiFillEye";
 import React, { useState } from "react";
