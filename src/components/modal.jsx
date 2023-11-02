@@ -34,7 +34,18 @@ const Modal = ({ show, onClose, children }) => {
   );
 };
 
-const ModalApp = ({ imageUrl, name, rate, view, title, description, alt }) => {
+const ModalApp = ({
+  imageUrl,
+  name,
+  rate,
+  view,
+  title,
+  description,
+  alt,
+  head,
+  body,
+  foot,
+}) => {
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -74,7 +85,7 @@ const ModalApp = ({ imageUrl, name, rate, view, title, description, alt }) => {
             </div>
           </div>
         </div>
-        <div className="px-4 py-3 bg-gray-50 sm:px-6 sm:flex sm:flex-row-reverse">
+        <div className="px-4 py-3 bg-gray-50 sm:px-6 sm:flex sm:justify-between sm:flex-row-reverse">
           <button
             type="button"
             className="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:mr-3 sm:w-auto sm:text-sm"
@@ -82,6 +93,26 @@ const ModalApp = ({ imageUrl, name, rate, view, title, description, alt }) => {
           >
             Cancel
           </button>
+          <div>
+            <a
+              href={head}
+              className="m-2 text-sm px-5 py-1 rounded-full bg-[#FFDA79] text-[#0D0C22]"
+            >
+              head
+            </a>
+            <a
+              href={body}
+              className="m-2 text-sm px-5 py-1 rounded-full bg-[#FFDA79] text-[#0D0C22]"
+            >
+              body
+            </a>
+            <a
+              href={foot}
+              className="m-2 text-sm px-5 py-1 rounded-full bg-[#FFDA79] text-[#0D0C22]"
+            >
+              foot
+            </a>
+          </div>
         </div>
       </Modal>
     </div>

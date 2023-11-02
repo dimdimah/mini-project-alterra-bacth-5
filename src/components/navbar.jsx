@@ -44,6 +44,12 @@ export default function Navbar() {
               >
                 Products
               </Link>
+              <Link
+                to="/openai"
+                className="w-20 py-3 text-lg text-center text-gray-900 rounded-full hover:text-gray-500"
+              >
+                Assistant
+              </Link>
               <p
                 className="cursor-pointer w-16 rounded-full py-3 text-center text-lg text-gray-100 bg-[#0D0C22] hover:bg-[#565564] hover:delay-150"
                 onClick={() => handleLogout()}

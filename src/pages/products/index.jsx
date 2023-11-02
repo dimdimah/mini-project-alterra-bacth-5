@@ -36,6 +36,9 @@ const indexProduct = () => {
               view={product.view}
               alt={product.title}
               title={product.title}
+              head={product.links.head}
+              body={product.links.body}
+              foot={product.links.foot}
               description={product.description}
             />
           </div>
