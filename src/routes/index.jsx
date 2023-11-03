@@ -7,6 +7,7 @@ import {
 import { useToken } from "@/utils/contexts/token";
 import RegisterPage from "@/pages/auth/register";
 import ProductsPage from "@/pages/products";
+import OpenAi from "@/pages/openAi";
 import HijabPage from "@/pages/products/hijab";
 import HijablessPage from "@/pages/products/nonHijab";
 import LoginPage from "@/pages/auth/login";
@@ -31,6 +32,10 @@ export default function Router() {
     {
       path: "/products/nonHijab",
       element: token === "" ? <Navigate to="/" /> : <HijablessPage />,
+    },
+    {
+      path: "/openai",
+      element: token === "" ? <Navigate to="/" /> : <OpenAi />,
     },
     {
       path: "/login",
